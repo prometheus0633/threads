@@ -4,7 +4,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -pthread
 
-SRC = threads_mutexes.c
+SRC = ret_value_from_threads.c
 
 OBJS = $(SRC:.c=.o)
 
@@ -15,4 +15,6 @@ $(NAME) : $(OBJS)
 
 clean :
 	rm $(OBJS) $(NAME)
+
+re : clean all
 
